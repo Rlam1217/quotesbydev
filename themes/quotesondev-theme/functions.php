@@ -30,6 +30,39 @@ function qod_setup() {
 endif; // qod_setup
 add_action( 'after_setup_theme', 'qod_setup' );
 
+
+	// Enqueue & Localize
+	function red_scripts() {
+		$script_url = get_template_directory_uri() . '/build/js/scripts.min.js';
+		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
+	   	wp_localize_script( 'red_comments', 'red_vars', array(
+		   'rest_url' => esc_url_raw( rest_url() ),
+		   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+		   'post_id' => get_the_ID()
+	   ) );
+	 }
+	 add_action( 'wp_enqueue_scripts', 'red_scripts' );
+
+
+ function red_comment_ajax() {
+	check_ajax_referer( 'red_comment_status', 'security' );
+	if ( ! current_user_can( 'edit_posts' ) ) {
+	   exit;
+	}
+	$id = $_POST['the_post_id'];
+	if ( isset( $id ) && is_numeric( $id ) ) {
+	   $the_post = array(
+		  'ID' => $id,
+		  'comment_status' => 'closed'
+	   );
+	   wp_update_post( $the_post );
+	}
+	exit;
+ }
+ add_action( 'wp_ajax_red_comment_ajax', 'red_comment_ajax' );
+ // add_action( 'wp_ajax_nopriv_red_comment_ajax', 'red_comment_ajax' )
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

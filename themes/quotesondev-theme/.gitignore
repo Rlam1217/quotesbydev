@@ -22,4 +22,22 @@ ehthumbs.db
 
 # Ignore packages #
 # =============== #
-node_modules/
+
+# Ignore everything in "wp-content" except the "plugins", "themes", and "uploads" directories #
+
+
+/*
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!README.md
+
+plugins/*
+!plugins/red-functionality-master
+
+themes/*
+!themes/quotesondev-theme
+themes/quotesondev-theme/node_modules/
+
+uploads/wp-migrate-db/
