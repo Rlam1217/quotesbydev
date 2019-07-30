@@ -672,6 +672,11 @@ object {
     .site-header .site-branding .logo img {
       width: 300px; }
 
+/* footer */
+.site-footer {
+  background-color: black;
+  height: 600px; }
+
 /* home page */
 .content-area {
   max-width: 480px;
@@ -679,4 +684,21 @@ object {
   margin: 0 auto; }
 
 /* All Archives Page */
+.site-main h1 {
+  margin-bottom: 0px; }
+
+.site-main h2 {
+  font-size: 1.5rem;
+  padding: 19.92px 0px 19.92px 0px; }
+
+.site-main .categories {
+  list-style: none; }
+
+.site-main ul {
+  list-style: none;
+  margin: 0; }
+  .site-main ul li {
+    display: inline-block;
+    padding-right: 18px; }
+
 /* Submit a Quote Page */

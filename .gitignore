@@ -34,10 +34,11 @@ ehthumbs.db
 !README.md
 
 plugins/*
-!plugins/red-functionality-master
+!plugins/red-functionality-master/
 
 themes/*
-!themes/quotesondev-theme
+!themes/quotesondev-theme/
 themes/quotesondev-theme/node_modules/
+themes/quotesondev-theme/debug.log
 
 uploads/wp-migrate-db/
