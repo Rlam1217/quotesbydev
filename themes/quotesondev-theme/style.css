@@ -39,6 +39,69 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* extra resetting  */
+/* makes all images responsive */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/* ------------------------------------------------ */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -591,6 +654,29 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* global */
+#page {
+  padding: 12px;
+  background-color: yellow;
+  max-width: 480px;
+  margin: 0 auto; }
+
+/* header */
+.site-header {
+  padding: 48px 0px 48px 0px;
+  background-color: green;
+  max-width: 480px; }
+  .site-header .site-branding {
+    max-width: 480px;
+    background-color: #222222; }
+    .site-header .site-branding .logo img {
+      width: 300px; }
+
 /* home page */
+.content-area {
+  max-width: 480px;
+  background-color: yellow;
+  margin: 0 auto; }
+
 /* All Archives Page */
 /* Submit a Quote Page */

@@ -1,10 +1,43 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* global */
+#page {
+    padding: 12px;
+    background-color: yellow;
+    max-width: $max-width-mobile;
+    margin: 0 auto;
+}
+
+
+
+/* header */
+.site-header{
+    
+    padding: 48px 0px 48px 0px;
+    background-color: green;
+    max-width: $max-width-mobile;
+.site-branding {
+    max-width: $max-width-mobile;
+   
+    background-color: $color-background;
+    .logo {
+    img {
+        width: 300px;
+    }
+}
+}
+}
+
+
 
 
 /* home page */
-
+.content-area {
+    max-width: $max-width-mobile;
+    background-color: yellow;
+    margin: 0 auto;
+}
 
 
 
