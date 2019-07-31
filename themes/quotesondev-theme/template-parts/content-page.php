@@ -13,8 +13,10 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content-container">
-		<div class="quote-wrapper"><?php the_content(); ?></div>
+		<div class="quote-wrapper"><q><p><?php the_content(); ?></p></q>
+		</div>
 		<h2 class="author">- <?php the_title(); ?> </h2>
+		
 		
 		<?php
 			wp_link_pages( array(

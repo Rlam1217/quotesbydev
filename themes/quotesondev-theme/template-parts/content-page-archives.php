@@ -9,6 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+        <div class="content-container">
     <h2 class="entry-title">Quote Authors</h2>
 	
 		<?php
@@ -61,7 +62,7 @@ if ( $all_posts->have_posts() ) :
         <?php endforeach; ?>
     <?php endif; ?>
 </ul>
-	
+	</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

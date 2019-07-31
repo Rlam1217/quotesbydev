@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Exo';
+    font-family: 'Exo Web';
     font-size: 16px;
     a:link {
         text-decoration: none;
@@ -62,8 +62,9 @@ body {
     max-width: $max-width-mobile;
     background-color: $color-background;
     .logo {
-    img {
-        width: 300px;
+        img {
+            width: 300px;
+        }  
     }
     @include tablet {
         max-width: $max-width-tablet;
@@ -72,15 +73,33 @@ body {
     @include desktop {
         max-width: $max-width-desktop;
         background-color: peru;
+        .logo{
+            max-width: 700px;
+            background-color: orchid;
+            margin: 0 auto;
+            img{
+                width: 700px;
+            }
+        }
     }
+    
 }
-}
+
 }
 
 /* footer */
 .site-footer {
     background-color: skyblue;
     height: 600px;
+    @include tablet {
+        max-width: $max-width-tablet;
+        background-color: blue;
+    }
+    @include desktop {
+        max-width: $max-width-desktop;
+        background-color: peru;
+    }
+    
     .main-navigation {
         background-color: black;
         li:nth-child(1) {
@@ -109,14 +128,6 @@ body {
     max-width: $max-width-mobile;
     background-color: black;
     margin: 0 auto;
-    @include tablet {
-        max-width: $max-width-tablet;
-        background-color: red;
-    }
-    @include desktop {
-        max-width: $max-width-desktop;
-        background-color: peru;
-    }
     .button-wrapper{
         padding-bottom: 72px;
         button {
@@ -128,13 +139,62 @@ body {
         }
 
     }
+    @include tablet {
+        max-width: $max-width-tablet;
+        background-color: red;
+    }
+    @include desktop {
+        max-width: $max-width-desktop;
+        background-color: peru;
+        .quote-wrapper{
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: green;
+            q {
+                quotes: "“" "”" "‘" "’";
+                background-color: purple;
+              }
+              q:before {
+                  content: open-quote;
+                  font-size: 100px;
+                  display: inline;
+                  position: relative;
+              }
+              q:after {
+                  content: close-quote;
+                  font-size: 100px;
+                  display: inline;
+                  position: relative;
+              }
+            
+        }
+        h2 {
+            margin: 0 auto;
+            max-width: 650px;
+        }
+        .button-wrapper {
+            max-width: 200px;
+            margin: 0 auto;
+        button {
+            margin: 0 auto;
+        }
+        }
+    }
+
+    
 }
 
 
 
 /* All Archives Page */
-
-.site-main {
+.page-title{
+    max-width: 650px;
+    margin: 0 auto;
+}
+.content-container {
+    background-color: black;
+    max-width: 650px;
+    margin: 0 auto;
     h1 {
         margin-bottom: 0px;
     }
@@ -159,8 +219,11 @@ body {
 /* category page */
 
 .entry-content {
+    background-color: black;
+    max-width: 650px;
     border-top: 1px dashed;
     padding-top: 24px;
+    margin: 0 auto;
     .entry-title {
         padding: 0px;
         

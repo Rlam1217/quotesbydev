@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Quotes on Dev Starter Theme
 Theme URI: http://underscores.me/
@@ -285,11 +286,28 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Exo';
-  src: url("../../Exo-Light.eot");
-  src: url("../../Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../Exo-Light.woff2") format("woff2"), url("../../Exo-Light.woff") format("woff"), url("../../Exo-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: 'Exo Web';
+  src: url(../../fonts/exo-light-webfont.ttf);
+  font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Exo Web';
+  src: url(../../fonts/exo-lightitalic-webfont.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo Web';
+  src: url(../../fonts/exo-medium-webfont.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo Web';
+  src: url(../../fonts/exo-mediumitalic-webfont.ttf);
+  font-weight: bold;
+  font-style: italic; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -674,7 +692,7 @@ object {
       background-color: peru; } }
 
 body {
-  font-family: 'Exo';
+  font-family: 'Exo Web';
   font-size: 16px; }
   body a:link {
     text-decoration: none; }
@@ -704,18 +722,32 @@ body {
     .site-header .site-branding .logo img {
       width: 300px; }
     @media (min-width: 480px) {
-      .site-header .site-branding .logo {
+      .site-header .site-branding {
         max-width: 600px;
         background-color: red; } }
     @media (min-width: 600px) {
-      .site-header .site-branding .logo {
+      .site-header .site-branding {
         max-width: 1600px;
-        background-color: peru; } }
+        background-color: peru; }
+        .site-header .site-branding .logo {
+          max-width: 700px;
+          background-color: orchid;
+          margin: 0 auto; }
+          .site-header .site-branding .logo img {
+            width: 700px; } }
 
 /* footer */
 .site-footer {
   background-color: skyblue;
   height: 600px; }
+  @media (min-width: 480px) {
+    .site-footer {
+      max-width: 600px;
+      background-color: blue; } }
+  @media (min-width: 600px) {
+    .site-footer {
+      max-width: 1600px;
+      background-color: peru; } }
   .site-footer .main-navigation {
     background-color: black; }
     .site-footer .main-navigation li:nth-child(1) {
@@ -735,14 +767,6 @@ body {
   max-width: 480px;
   background-color: black;
   margin: 0 auto; }
-  @media (min-width: 480px) {
-    .content-area {
-      max-width: 600px;
-      background-color: red; } }
-  @media (min-width: 600px) {
-    .content-area {
-      max-width: 1600px;
-      background-color: peru; } }
   .content-area .button-wrapper {
     padding-bottom: 72px; }
     .content-area .button-wrapper button {
@@ -751,29 +775,70 @@ body {
       background-color: black;
       border-width: 2px;
       border-color: #00cc00; }
+  @media (min-width: 480px) {
+    .content-area {
+      max-width: 600px;
+      background-color: red; } }
+  @media (min-width: 600px) {
+    .content-area {
+      max-width: 1600px;
+      background-color: peru; }
+      .content-area .quote-wrapper {
+        max-width: 650px;
+        margin: 0 auto;
+        background-color: green; }
+        .content-area .quote-wrapper q {
+          quotes: "“" "”" "‘" "’";
+          background-color: purple; }
+        .content-area .quote-wrapper q:before {
+          content: open-quote;
+          font-size: 100px;
+          display: inline;
+          position: relative; }
+        .content-area .quote-wrapper q:after {
+          content: close-quote;
+          font-size: 100px;
+          display: inline;
+          position: relative; }
+      .content-area h2 {
+        margin: 0 auto;
+        max-width: 650px; }
+      .content-area .button-wrapper {
+        max-width: 200px;
+        margin: 0 auto; }
+        .content-area .button-wrapper button {
+          margin: 0 auto; } }
 
 /* All Archives Page */
-.site-main h1 {
-  margin-bottom: 0px; }
+.page-title {
+  max-width: 650px;
+  margin: 0 auto; }
 
-.site-main h2 {
-  font-size: 1.5rem;
-  padding: 19.92px 0px 19.92px 0px; }
-
-.site-main .categories {
-  list-style: none; }
-
-.site-main ul {
-  list-style: none;
-  margin: 0; }
-  .site-main ul li {
-    display: inline-block;
-    padding-right: 18px; }
+.content-container {
+  background-color: black;
+  max-width: 650px;
+  margin: 0 auto; }
+  .content-container h1 {
+    margin-bottom: 0px; }
+  .content-container h2 {
+    font-size: 1.5rem;
+    padding: 19.92px 0px 19.92px 0px; }
+  .content-container .categories {
+    list-style: none; }
+  .content-container ul {
+    list-style: none;
+    margin: 0; }
+    .content-container ul li {
+      display: inline-block;
+      padding-right: 18px; }
 
 /* category page */
 .entry-content {
+  background-color: black;
+  max-width: 650px;
   border-top: 1px dashed;
-  padding-top: 24px; }
+  padding-top: 24px;
+  margin: 0 auto; }
   .entry-content .entry-title {
     padding: 0px; }
 
