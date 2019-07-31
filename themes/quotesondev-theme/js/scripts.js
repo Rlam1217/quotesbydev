@@ -17,15 +17,18 @@
          console.log(response[0].title.rendered);
          console.log(response[0]);
          console.log(response);
+         console.log(response[0]._qod_quote_source);
         
        
 
 // 
         
-        
-        $('.entry-content').append(response[0].content.rendered);
+        $('.quote-wrapper').empty();
+        $('.author').empty();
+        $('.quote-wrapper').append(response[0].content.rendered);
+        $('.author').append(response[0].title.rendered);
        
-
+       
 
         
 

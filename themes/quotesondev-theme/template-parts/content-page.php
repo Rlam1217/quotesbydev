@@ -13,7 +13,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<div class="quote-wrapper"><?php the_content(); ?></div>
+		<h2 class="author">- <?php the_title(); ?> </h2>
+		
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),

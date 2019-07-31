@@ -284,6 +284,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../Exo-Light.eot");
+  src: url("../../Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../Exo-Light.woff2") format("woff2"), url("../../Exo-Light.woff") format("woff"), url("../../Exo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -657,9 +664,21 @@ object {
 /* global */
 #page {
   padding: 12px;
-  background-color: yellow;
+  background-color: black;
   max-width: 480px;
   margin: 0 auto; }
+
+body {
+  font-family: 'Exo';
+  font-size: 16px; }
+  body a:link {
+    text-decoration: none; }
+  body a:link {
+    color: #00cc00; }
+  body a:visited {
+    color: #00cc00; }
+  body a:hover, body a:active {
+    color: #00cc00; }
 
 /* header */
 .site-header {
@@ -676,11 +695,24 @@ object {
 .site-footer {
   background-color: black;
   height: 600px; }
+  .site-footer .main-navigation {
+    background-color: black; }
+    .site-footer .main-navigation li:nth-child(1) {
+      padding-right: 16px;
+      border-right: solid; }
+    .site-footer .main-navigation li:nth-child(2) {
+      background-color: red;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-right: solid; }
+    .site-footer .main-navigation li:nth-child(3) {
+      background-color: red;
+      padding-left: 16px; }
 
 /* home page */
 .content-area {
   max-width: 480px;
-  background-color: yellow;
+  background-color: black;
   margin: 0 auto; }
 
 /* All Archives Page */

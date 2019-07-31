@@ -40,3 +40,15 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 	remove_meta_box( 'trackbacksdiv', 'post', 'normal' );
 }
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
+
+
+/**
+ * Sets catergory and tags posts to 5 per page
+ */
+add_action( 'pre_get_posts', 'category_posts' );
+function category_posts( $query ) {
+	if ( is_archive() ) :
+        
+        $query->set( 'posts_per_page', '5' );
+	endif;
+}

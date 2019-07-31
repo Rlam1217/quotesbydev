@@ -4,10 +4,32 @@
 /* global */
 #page {
     padding: 12px;
-    background-color: yellow;
+    background-color: black;
     max-width: $max-width-mobile;
     margin: 0 auto;
 }
+
+body {
+    font-family: 'Exo';
+    font-size: 16px;
+    a:link {
+        text-decoration: none;
+      }
+
+      a:link {
+        color: $color-brand;
+      }
+
+      a:visited {
+        color: $color-brand;
+      }
+      
+
+      a:hover, a:active {
+        color: $color-brand;
+      }
+}
+
 
 
 
@@ -33,6 +55,23 @@
 .site-footer {
     background-color: black;
     height: 600px;
+    .main-navigation {
+        background-color: black;
+        li:nth-child(1) {
+            padding-right: 16px;
+            border-right: solid;
+        }
+        li:nth-child(2) {
+            background-color: red;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-right: solid;
+          }
+          li:nth-child(3) {
+            background-color: red;
+            padding-left: 16px;
+          }
+    }
 
 }
 
@@ -42,7 +81,7 @@
 /* home page */
 .content-area {
     max-width: $max-width-mobile;
-    background-color: yellow;
+    background-color: black;
     margin: 0 auto;
 }
 
