@@ -17,8 +17,9 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-
-			<button type="button" id="close-comments">Show me another! </button>
+			<div class="button-wrapper">
+				<button type="button" id="close-comments">Show me another! </button>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -4,9 +4,17 @@
 /* global */
 #page {
     padding: 12px;
-    background-color: black;
+    background-color: yellow;
     max-width: $max-width-mobile;
     margin: 0 auto;
+    @include tablet {
+        max-width: $max-width-tablet;
+        background-color: red;
+    }
+        @include desktop {
+            max-width: $max-width-desktop;
+            background-color: peru;
+        }
 }
 
 body {
@@ -39,13 +47,31 @@ body {
     padding: 48px 0px 48px 0px;
     background-color: green;
     max-width: $max-width-mobile;
+    @include tablet {
+        max-width: $max-width-tablet;
+        background-color: blue;
+    }
+    @include desktop {
+        max-width: $max-width-desktop;
+        background-color: peru;
+    }
+
+
+    
 .site-branding {
     max-width: $max-width-mobile;
-   
     background-color: $color-background;
     .logo {
     img {
         width: 300px;
+    }
+    @include tablet {
+        max-width: $max-width-tablet;
+        background-color: red;
+    }
+    @include desktop {
+        max-width: $max-width-desktop;
+        background-color: peru;
     }
 }
 }
@@ -53,7 +79,7 @@ body {
 
 /* footer */
 .site-footer {
-    background-color: black;
+    background-color: skyblue;
     height: 600px;
     .main-navigation {
         background-color: black;
@@ -83,6 +109,25 @@ body {
     max-width: $max-width-mobile;
     background-color: black;
     margin: 0 auto;
+    @include tablet {
+        max-width: $max-width-tablet;
+        background-color: red;
+    }
+    @include desktop {
+        max-width: $max-width-desktop;
+        background-color: peru;
+    }
+    .button-wrapper{
+        padding-bottom: 72px;
+        button {
+            padding: 12px 36px;
+            color: $color-brand;
+            background-color: black;
+            border-width: 2px;
+            border-color: $color-brand;
+        }
+
+    }
 }
 
 
@@ -107,6 +152,31 @@ body {
             display: inline-block;
             padding-right: 18px;
         }
+    }
+}
+
+
+/* category page */
+
+.entry-content {
+    border-top: 1px dashed;
+    padding-top: 24px;
+    .entry-title {
+        padding: 0px;
+        
+}
+}
+
+
+
+/* 404 page */
+
+.page-content {
+    
+    fieldset{
+        border-color: $color-brand;
+        border-width: 2px;
+        width: 260px;
     }
 }
 
