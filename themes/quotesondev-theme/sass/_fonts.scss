@@ -1,3 +1,27 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face{
+    font-family: 'Exo Web';
+    src: url(../../fonts/exo-light-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Exo Web';
+    src: url(../../fonts/exo-lightitalic-webfont.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Exo Web';
+    src: url(../../fonts/exo-medium-webfont.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Exo Web';
+    src: url(../../fonts/exo-mediumitalic-webfont.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
