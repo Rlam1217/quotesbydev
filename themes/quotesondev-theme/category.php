@@ -26,12 +26,12 @@ get_header(); ?>
 					get_template_part( 'template-parts/content' );
 				?>
 
+	<?php endwhile; ?>
 
-
-        
-<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
+		<?php echo paginate_links( array(
+			'format' => '?paged=%#%',
+			'current' => max( 1, get_query_var('paged') ),
+		) ); ?>
 
 		<?php else : ?>
 
