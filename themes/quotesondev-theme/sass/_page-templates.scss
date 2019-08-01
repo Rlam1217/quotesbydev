@@ -204,13 +204,20 @@ body {
 
 /* All Archives Page */
 .page-title{
-    max-width: 650px;
     margin: 0 auto;
+    max-width: 480px;
+    @include tablet {
+        max-width: $max-width-tablet;
+    }
+    @include desktop {
+        max-width: 650px;
+        font-weight: bold;
+    }
 }
 .content-container {
     background-color: black;
-    max-width: 650px;
     margin: 0 auto;
+   
     h1 {
         margin-bottom: 0px;
     }
@@ -224,11 +231,20 @@ body {
     ul {
         list-style: none;
         margin: 0;
+        
         li {
             display: inline-block;
             padding-right: 18px;
+            font-size: 1.25rem;
         }
     }
+    @include tablet {
+        max-width: $max-width-tablet;
+    }
+    @include desktop {
+        max-width: 650px;
+    }
+    
 }
 
 
@@ -236,12 +252,26 @@ body {
 
 .entry-content {
     background-color: black;
-    max-width: 650px;
+    max-width: $max-width-mobile;
     border-top: 1px dashed;
     padding-top: 24px;
     margin: 0 auto;
+    @include tablet {
+        max-width: $max-width-tablet;
+    }
+    @include desktop {
+        max-width: 650px;
+        font-size: 2.5rem;
+    }
     .entry-title {
         padding: 0px;
+        @include tablet {
+            max-width: $max-width-tablet;
+        }
+        @include desktop {
+            max-width: $max-width-desktop;
+            font-size: 1.25rem;
+        }
         
 }
 }

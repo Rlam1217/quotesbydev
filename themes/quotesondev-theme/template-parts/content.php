@@ -13,7 +13,7 @@
 
 	<div class="entry-content">
 	<?php the_excerpt(); ?>
-	<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
