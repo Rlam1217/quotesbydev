@@ -90,16 +90,6 @@ body {
 /* footer */
 .site-footer {
     background-color: skyblue;
-    height: 600px;
-    @include tablet {
-        max-width: $max-width-tablet;
-        background-color: blue;
-    }
-    @include desktop {
-        max-width: $max-width-desktop;
-        background-color: peru;
-    }
-    
     .main-navigation {
         background-color: black;
         li:nth-child(1) {
@@ -116,7 +106,18 @@ body {
             background-color: red;
             padding-left: 16px;
           }
+          @include desktop {
+            max-width: $max-width-desktop;
+            background-color: green;
+            padding-left: 600px;
+            
+        }    
+
+
     }
+   
+    
+    
 
 }
 
@@ -136,6 +137,8 @@ body {
             background-color: black;
             border-width: 2px;
             border-color: $color-brand;
+            font-family: 'Exo Web';
+        
         }
 
     }
@@ -146,37 +149,50 @@ body {
     @include desktop {
         max-width: $max-width-desktop;
         background-color: peru;
+        q {
+            quotes: "“" "”" "‘" "’";
+           
+          }
+          .quote-wrapper:before {
+              content: open-quote;
+              font-size: 25rem;
+              position: relative;
+              color: $color-brand;
+              left: -140px;
+              top: -130px;
+              height: 0px;
+              width: 0px;
+              
+          }
+          .quote-wrapper:after {
+              content: close-quote;
+              font-size: 25rem;
+              position: relative;
+              color: $color-brand;
+              right: -55px;
+              top: -130px;
+              height: 0px;
+              width: 0px;
+          }
         .quote-wrapper{
             max-width: 650px;
+            display: flex;
             margin: 0 auto;
             background-color: green;
-            q {
-                quotes: "“" "”" "‘" "’";
-                background-color: purple;
-              }
-              q:before {
-                  content: open-quote;
-                  font-size: 100px;
-                  display: inline;
-                  position: relative;
-              }
-              q:after {
-                  content: close-quote;
-                  font-size: 100px;
-                  display: inline;
-                  position: relative;
-              }
-            
+            font-size: 2.5rem;
         }
         h2 {
             margin: 0 auto;
             max-width: 650px;
         }
         .button-wrapper {
-            max-width: 200px;
+            max-width: 240px;
             margin: 0 auto;
         button {
             margin: 0 auto;
+            font-weight: 800px;
+            font-size: 1.1rem;
+            max-width: 240px;
         }
         }
     }
@@ -244,3 +260,27 @@ body {
 }
 
 /* Submit a Quote Page */
+
+
+
+/* About page */
+.about-title {
+    max-width: $max-width-mobile;
+    font-size: 2rem;
+    font-weight: bold;
+
+    @include desktop {
+    max-width: $max-width-desktop;
+    background-color: peru;
+    max-width: 650px;
+    margin: 0 auto; 
+}
+}
+.about-content-container{
+    p {
+        font-size: 1rem;
+    }
+    @include desktop {
+   
+    }
+}

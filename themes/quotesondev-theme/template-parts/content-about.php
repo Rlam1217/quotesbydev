@@ -9,20 +9,16 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php // the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    <?php the_title( '<h1 class="about-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content-container">
+	<div class="about-content-container">
+   
 		<q><div class="quote-wrapper"><?php the_content(); ?>
 		</div></q>
-		<h2 class="author">- <?php the_title(); ?> </h2>
 		
 		
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
+		
+		
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

@@ -444,23 +444,6 @@ input[type="submit"] {
   font-size: .75rem;
   line-height: 1;
   padding: .6rem 1rem .4rem; }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
 input[type="text"],
@@ -513,7 +496,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -684,9 +666,9 @@ object {
   margin: 0 auto; }
   @media (min-width: 480px) {
     #page {
-      max-width: 600px;
+      max-width: 1024px;
       background-color: red; } }
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     #page {
       max-width: 1600px;
       background-color: peru; } }
@@ -710,9 +692,9 @@ body {
   max-width: 480px; }
   @media (min-width: 480px) {
     .site-header {
-      max-width: 600px;
+      max-width: 1024px;
       background-color: blue; } }
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     .site-header {
       max-width: 1600px;
       background-color: peru; } }
@@ -723,9 +705,9 @@ body {
       width: 300px; }
     @media (min-width: 480px) {
       .site-header .site-branding {
-        max-width: 600px;
+        max-width: 1024px;
         background-color: red; } }
-    @media (min-width: 600px) {
+    @media (min-width: 1024px) {
       .site-header .site-branding {
         max-width: 1600px;
         background-color: peru; }
@@ -738,16 +720,7 @@ body {
 
 /* footer */
 .site-footer {
-  background-color: skyblue;
-  height: 600px; }
-  @media (min-width: 480px) {
-    .site-footer {
-      max-width: 600px;
-      background-color: blue; } }
-  @media (min-width: 600px) {
-    .site-footer {
-      max-width: 1600px;
-      background-color: peru; } }
+  background-color: skyblue; }
   .site-footer .main-navigation {
     background-color: black; }
     .site-footer .main-navigation li:nth-child(1) {
@@ -761,6 +734,11 @@ body {
     .site-footer .main-navigation li:nth-child(3) {
       background-color: red;
       padding-left: 16px; }
+    @media (min-width: 1024px) {
+      .site-footer .main-navigation {
+        max-width: 1600px;
+        background-color: green;
+        padding-left: 600px; } }
 
 /* home page */
 .content-area {
@@ -774,40 +752,55 @@ body {
       color: #00cc00;
       background-color: black;
       border-width: 2px;
-      border-color: #00cc00; }
+      border-color: #00cc00;
+      font-family: 'Exo Web'; }
   @media (min-width: 480px) {
     .content-area {
-      max-width: 600px;
+      max-width: 1024px;
       background-color: red; } }
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     .content-area {
       max-width: 1600px;
       background-color: peru; }
+      .content-area q {
+        quotes: "“" "”" "‘" "’"; }
+      .content-area .quote-wrapper:before {
+        content: open-quote;
+        font-size: 25rem;
+        position: relative;
+        color: #00cc00;
+        left: -140px;
+        top: -130px;
+        height: 0px;
+        width: 0px; }
+      .content-area .quote-wrapper:after {
+        content: close-quote;
+        font-size: 25rem;
+        position: relative;
+        color: #00cc00;
+        right: -55px;
+        top: -130px;
+        height: 0px;
+        width: 0px; }
       .content-area .quote-wrapper {
         max-width: 650px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         margin: 0 auto;
-        background-color: green; }
-        .content-area .quote-wrapper q {
-          quotes: "“" "”" "‘" "’";
-          background-color: purple; }
-        .content-area .quote-wrapper q:before {
-          content: open-quote;
-          font-size: 100px;
-          display: inline;
-          position: relative; }
-        .content-area .quote-wrapper q:after {
-          content: close-quote;
-          font-size: 100px;
-          display: inline;
-          position: relative; }
+        background-color: green;
+        font-size: 2.5rem; }
       .content-area h2 {
         margin: 0 auto;
         max-width: 650px; }
       .content-area .button-wrapper {
-        max-width: 200px;
+        max-width: 240px;
         margin: 0 auto; }
         .content-area .button-wrapper button {
-          margin: 0 auto; } }
+          margin: 0 auto;
+          font-weight: 800px;
+          font-size: 1.1rem;
+          max-width: 240px; } }
 
 /* All Archives Page */
 .page-title {
@@ -849,3 +842,17 @@ body {
   width: 260px; }
 
 /* Submit a Quote Page */
+/* About page */
+.about-title {
+  max-width: 480px;
+  font-size: 2rem;
+  font-weight: bold; }
+  @media (min-width: 1024px) {
+    .about-title {
+      max-width: 1600px;
+      background-color: peru;
+      max-width: 650px;
+      margin: 0 auto; } }
+
+.about-content-container p {
+  font-size: 1rem; }

@@ -12,11 +12,14 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php the_post_navigation(); ?>
+			
 
 		<?php endwhile; // End of the loop. ?>
+		<div class="button-wrapper">
+				<button type="button" id="close-comments">Show me another! </button>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
