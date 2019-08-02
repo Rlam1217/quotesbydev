@@ -3,13 +3,11 @@
 --------------------------------------------------------------*/
 /* global */
 
-#page {
-   
-}
 
 body {
     font-family: 'Exo Web';
     font-size: 16px;
+    color: #fff;
     a:link {
         text-decoration: none;
       }
@@ -92,6 +90,7 @@ body {
 /* footer */
 .site-footer {
     background-color: green;
+    padding-bottom: 200px;
     .main-navigation {
         background-color: black;
         li:nth-child(1) {
@@ -152,7 +151,7 @@ body {
         max-width: $max-width-desktop;
         background-color: peru;
         q {
-            quotes: "“" "”" "‘" "’";
+            quotes: "“" "”";
            
           }
           .quote-wrapper:before {
@@ -205,15 +204,47 @@ body {
 
 
 /* All Archives Page */
+
+@include desktop {
+    max-width: 650px;
+q {
+    quotes: "“" "”";
+   
+  }
+  .page-title:before {
+      content: open-quote;
+      font-size: 25rem;
+      position: relative;
+      color: $color-brand;
+      left: -180px;
+      top: -130px;
+      height: 0;
+      width: 0px;
+      
+  }
+  .page-title:after {
+      content: close-quote;
+      font-size: 25rem;
+      position: relative;
+      color: $color-brand;
+      right: -520px;
+      top: -130px;
+      height: 0;
+      width: 0px;
+  }
+}
+
 .page-title{
     margin: 0 auto;
     max-width: 480px;
+    display: flex;
     @include tablet {
         max-width: $max-width-tablet;
     }
     @include desktop {
         max-width: 650px;
         font-weight: bold;
+       
     }
 }
 .content-container {
@@ -258,6 +289,7 @@ body {
     border-top: 1px dashed;
     padding-top: 24px;
     margin: 0 auto;
+    color: $color-brand;
     @include tablet {
         max-width: $max-width-tablet;
     }
@@ -292,6 +324,45 @@ body {
 }
 
 /* Submit a Quote Page */
+
+.submit-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    
+    input[type="text"] { 
+        border-color: $color-brand;
+        border-width: 2px;
+        background-color: black;
+        margin: 10px 0 10px 0;
+    }
+    #submit-quote{
+        height: 60px;
+        width: 98%;
+        border-color: $color-brand;
+        background-color: black;
+        border-width: 2px;
+        margin-top: 10px;
+    }
+    #submit-button {
+        margin-top: 10px;
+        background-color: black;
+        border-color: $color-brand;
+        border-width: 2px;
+        color: $color-brand;
+        font-family: 'Exo Web';
+        font-weight: bold;
+        font-size: 16px;
+    }
+    @include desktop {
+        max-width: $max-width-desktop;
+        font-size: 1.25rem;
+        width: 650px;
+        margin: 0 auto;
+        #submit-quote{
+            height: 80px;
+        }
+    }
+}
 
 
 

@@ -50,5 +50,16 @@ function category_posts( $query ) {
 	if ( is_archive() ) :
         
         $query->set( 'posts_per_page', '5' );
-	endif;
+
+    endif;
+    
+    if ( is_search() ) :
+
+        $query->set( 'posts_per_page', '10' );
+
+    endif;
 }
+
+
+
+

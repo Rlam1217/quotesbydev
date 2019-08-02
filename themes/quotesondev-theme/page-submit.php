@@ -10,18 +10,18 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+		<q><?php the_title( '<h1 class="page-title">', '</h1>' ); ?></q>
 
 
-		<div class="submitQuoteSection">
+		
          <?php if ( is_user_logged_in() ) { ?>
             
-             <div class=submit-page>
+             <div class=submit-wrapper>
                 <form id="quote-submit-form"  method='POST'>
 					Author of Quote <br>
 					<input type="text" id ="author-name" name="author"><br>
 					Quote <br> 
-					<input type="text" id= "submit-quote" name="quote"><br>
+					<textarea rows="10" id= "submit-quote" name="quote"></textarea><br>
 					Where did you find this quote? (e.g. book name) <br>
 					<input type="text" id="find-quote" name="findquote" value=""><br>
 					Provide the URL of the quote source, if available.<br>

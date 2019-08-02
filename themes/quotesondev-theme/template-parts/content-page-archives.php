@@ -65,7 +65,7 @@ if ( $all_posts->have_posts() ) :
 	</div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-content -->
+	<!-- .entry-content -->
 </article><!-- #post-## -->
