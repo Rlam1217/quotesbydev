@@ -2,19 +2,9 @@
 # Page Templates
 --------------------------------------------------------------*/
 /* global */
+
 #page {
-    padding: 12px;
-    background-color: yellow;
-    max-width: $max-width-mobile;
-    margin: 0 auto;
-    @include tablet {
-        max-width: $max-width-tablet;
-        background-color: red;
-    }
-        @include desktop {
-            max-width: $max-width-desktop;
-            background-color: peru;
-        }
+   
 }
 
 body {
@@ -35,6 +25,18 @@ body {
 
       a:hover, a:active {
         color: $color-brand;
+      }
+      padding: 12px;
+      background-color: yellow;
+      max-width: $max-width-mobile;
+      margin: 0 auto;
+      @include tablet {
+          max-width: $max-width-tablet;
+          background-color: red;
+      }
+      @include desktop {
+          max-width: $max-width-desktop;
+          background-color: peru;
       }
 }
 
@@ -89,7 +91,7 @@ body {
 
 /* footer */
 .site-footer {
-    background-color: skyblue;
+    background-color: green;
     .main-navigation {
         background-color: black;
         li:nth-child(1) {
@@ -160,7 +162,7 @@ body {
               color: $color-brand;
               left: -140px;
               top: -130px;
-              height: 0px;
+              height: 0;
               width: 0px;
               
           }
@@ -171,7 +173,7 @@ body {
               color: $color-brand;
               right: -55px;
               top: -130px;
-              height: 0px;
+              height: 0;
               width: 0px;
           }
         .quote-wrapper{

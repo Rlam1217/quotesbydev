@@ -10,6 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+
+
 		<div class="submitQuoteSection">
          <?php if ( is_user_logged_in() ) { ?>
             
@@ -23,7 +26,7 @@ get_header(); ?>
 					<input type="text" id="find-quote" name="findquote" value=""><br>
 					Provide the URL of the quote source, if available.<br>
 					<input type="text" id="quote-source" name="quotesource" value=""><br>
-                    <input type="submit" id= "submitButton" value="Submit Quote">
+                    <input type="submit" id= "submit-button" value="Submit Quote">
                 </form>
             </div>
 
@@ -36,11 +39,7 @@ get_header(); ?>
             </div>
     
     <?php } ?>
-
-    
         </div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_footer(); ?>

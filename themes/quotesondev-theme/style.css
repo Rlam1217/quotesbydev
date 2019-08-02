@@ -659,23 +659,13 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* global */
-#page {
+body {
+  font-family: 'Exo Web';
+  font-size: 16px;
   padding: 12px;
   background-color: yellow;
   max-width: 480px;
   margin: 0 auto; }
-  @media (min-width: 480px) {
-    #page {
-      max-width: 1024px;
-      background-color: red; } }
-  @media (min-width: 1024px) {
-    #page {
-      max-width: 1600px;
-      background-color: peru; } }
-
-body {
-  font-family: 'Exo Web';
-  font-size: 16px; }
   body a:link {
     text-decoration: none; }
   body a:link {
@@ -684,6 +674,14 @@ body {
     color: #00cc00; }
   body a:hover, body a:active {
     color: #00cc00; }
+  @media (min-width: 480px) {
+    body {
+      max-width: 1024px;
+      background-color: red; } }
+  @media (min-width: 1024px) {
+    body {
+      max-width: 1600px;
+      background-color: peru; } }
 
 /* header */
 .site-header {
@@ -720,7 +718,7 @@ body {
 
 /* footer */
 .site-footer {
-  background-color: skyblue; }
+  background-color: green; }
   .site-footer .main-navigation {
     background-color: black; }
     .site-footer .main-navigation li:nth-child(1) {
@@ -771,7 +769,7 @@ body {
         color: #00cc00;
         left: -140px;
         top: -130px;
-        height: 0px;
+        height: 0;
         width: 0px; }
       .content-area .quote-wrapper:after {
         content: close-quote;
@@ -780,7 +778,7 @@ body {
         color: #00cc00;
         right: -55px;
         top: -130px;
-        height: 0px;
+        height: 0;
         width: 0px; }
       .content-area .quote-wrapper {
         max-width: 650px;

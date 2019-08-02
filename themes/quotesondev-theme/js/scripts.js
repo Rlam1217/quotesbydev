@@ -16,8 +16,8 @@
          console.log(response[0].content.rendered);
          console.log(response[0].title.rendered);
          console.log(response[0]);
-         console.log(response);
-         console.log(response[0]._qod_quote_source);
+         console.log(response[0]._qod_quote_source_url);
+         
         
        
 
@@ -28,11 +28,51 @@
         $('.quote-wrapper').append(response[0].content.rendered);
         $('.author').append(response[0].title.rendered);
        
-       
-
-        
-
 
       });
     });
+    
+
+    
+
+    $('#submit-button').on("click", function(event) {
+
+      const $author = $('#author-name').val();
+      const $quote = $('#submit-quote').val();
+      const $findQuote = $('#find-quote').val();
+      const $quoteSource = $('#quote-source').val();
+      event.preventDefault();
+      $.ajax({
+        method: "post",
+        url: red_vars.rest_url + "wp/v2/posts",
+        beforeSend: function (xhr) {
+          xhr.setRequestHeader("X-WP-Nonce", red_vars.wpapi_nonce);
+        },
+      
+          data: {
+          title: $author,
+          content: $quote,
+          _qod_quote_source: $findQuote,
+          _qod_quote_source_url: $quoteSource,
+          post_status: "pending"
+        }
+      }).success(function() {
+        alert("Quote sucessfully submitted to database");
+        
+  
+      }).fail(function () {
+  
+        alert("Quote submission unsuccessful");
+        
+  
+
+      });
+    });
+
+    
+
+
+
+
+
   })(jQuery);
