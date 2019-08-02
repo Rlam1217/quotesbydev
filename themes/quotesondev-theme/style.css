@@ -890,10 +890,38 @@ body {
         font-size: 1.25rem; } }
 
 /* 404 page */
-.page-content fieldset {
-  border-color: #00cc00;
-  border-width: 2px;
-  width: 260px; }
+.page-title {
+  font-weight: bold; }
+
+.page404-content p {
+  padding-top: 10px; }
+
+@media (min-width: 1024px) {
+  .page404-content {
+    max-width: 650px;
+    font-size: 1.25rem;
+    margin: 0 auto; } }
+
+.page404-content .search-form-wrapper {
+  padding-bottom: 80px; }
+  @media (min-width: 1024px) {
+    .page404-content .search-form-wrapper {
+      max-width: 650px;
+      font-size: 1.25rem;
+      margin: 0 auto; } }
+  .page404-content .search-form-wrapper fieldset {
+    border-color: #00cc00;
+    border-width: 2px;
+    padding: 0;
+    display: inline; }
+    .page404-content .search-form-wrapper fieldset .search-field {
+      background-color: black;
+      border-color: black; }
+  .page404-content .search-form-wrapper .search-submit {
+    background-color: black;
+    border-color: black; }
+    .page404-content .search-form-wrapper .search-submit .fas {
+      color: #00cc00; }
 
 /* Submit a Quote Page */
 .submit-wrapper {

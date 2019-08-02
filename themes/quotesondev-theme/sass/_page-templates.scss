@@ -313,13 +313,43 @@ q {
 
 
 /* 404 page */
-
-.page-content {
-    
+.page-title{ 
+    font-weight: bold;
+}
+.page404-content {
+   p {
+       padding-top: 10px;
+   }
+   @include desktop {
+    max-width: 650px;
+    font-size: 1.25rem;
+    margin: 0 auto;
+}
+    .search-form-wrapper {
+        padding-bottom: 80px;
+        @include desktop {
+            max-width: 650px;
+            font-size: 1.25rem;
+            margin: 0 auto;
+        }
     fieldset{
         border-color: $color-brand;
         border-width: 2px;
-        width: 260px;
+        padding: 0;
+        display: inline;
+        .search-field {
+            background-color: black;
+            border-color: black;
+        } 
+         }
+    .search-submit {
+        background-color: black;
+        border-color: black;
+        .fas { 
+            color: $color-brand;
+            
+        }
+    }
     }
 }
 
