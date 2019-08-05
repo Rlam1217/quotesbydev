@@ -682,21 +682,18 @@ body {
   @media (min-width: 1024px) {
     body {
       max-width: 1600px;
-      background-color: peru; } }
+      background-color: black; } }
 
 /* header */
 .site-header {
   padding: 48px 0px 48px 0px;
-  background-color: green;
   max-width: 480px; }
   @media (min-width: 480px) {
     .site-header {
-      max-width: 1024px;
-      background-color: blue; } }
+      max-width: 1024px; } }
   @media (min-width: 1024px) {
     .site-header {
-      max-width: 1600px;
-      background-color: peru; } }
+      max-width: 1600px; } }
   .site-header .site-branding {
     max-width: 480px;
     background-color: #222222; }
@@ -709,17 +706,16 @@ body {
     @media (min-width: 1024px) {
       .site-header .site-branding {
         max-width: 1600px;
-        background-color: peru; }
+        background-color: black; }
         .site-header .site-branding .logo {
           max-width: 700px;
-          background-color: orchid;
           margin: 0 auto; }
           .site-header .site-branding .logo img {
             width: 700px; } }
 
 /* footer */
 .site-footer {
-  background-color: green;
+  background-color: black;
   padding-bottom: 200px; }
   .site-footer .main-navigation {
     background-color: black; }
@@ -727,17 +723,18 @@ body {
       padding-right: 16px;
       border-right: solid; }
     .site-footer .main-navigation li:nth-child(2) {
-      background-color: red;
       padding-left: 16px;
       padding-right: 16px;
       border-right: solid; }
     .site-footer .main-navigation li:nth-child(3) {
-      background-color: red;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-right: solid; }
+    .site-footer .main-navigation li:nth-child(4) {
       padding-left: 16px; }
     @media (min-width: 1024px) {
       .site-footer .main-navigation {
         max-width: 1600px;
-        background-color: green;
         padding-left: 600px; } }
 
 /* home page */
@@ -761,12 +758,12 @@ body {
   @media (min-width: 1024px) {
     .content-area {
       max-width: 1600px;
-      background-color: peru; }
+      background-color: black; }
       .content-area q {
         quotes: "“" "”"; }
       .content-area .quote-wrapper:before {
         content: open-quote;
-        font-size: 25rem;
+        font-size: 27rem;
         position: relative;
         color: #00cc00;
         left: -140px;
@@ -775,7 +772,7 @@ body {
         width: 0px; }
       .content-area .quote-wrapper:after {
         content: close-quote;
-        font-size: 25rem;
+        font-size: 27rem;
         position: relative;
         color: #00cc00;
         right: -55px;
@@ -788,7 +785,7 @@ body {
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
-        background-color: green;
+        background-color: black;
         font-size: 2.5rem; }
       .content-area h2 {
         margin: 0 auto;
@@ -855,8 +852,10 @@ body {
     margin: 0; }
     .content-container ul li {
       display: inline-block;
-      padding-right: 18px;
-      font-size: 1.25rem; }
+      padding-right: 18px; }
+      @media (min-width: 480px) {
+        .content-container ul li {
+          font-size: 1.25rem; } }
   @media (min-width: 480px) {
     .content-container {
       max-width: 1024px; } }
@@ -865,29 +864,35 @@ body {
       max-width: 650px; } }
 
 /* category page */
+.page-title {
+  padding-bottom: 24px; }
+
 .entry-content {
   background-color: black;
   max-width: 480px;
-  border-top: 1px dashed;
+  border-top: 1px dashed #fff;
   padding-top: 24px;
   margin: 0 auto;
-  color: #00cc00; }
+  font-size: 1.25rem; }
   @media (min-width: 480px) {
     .entry-content {
-      max-width: 1024px; } }
+      max-width: 1024px;
+      font-size: 1.75rem; } }
   @media (min-width: 1024px) {
     .entry-content {
       max-width: 650px;
       font-size: 2.5rem; } }
   .entry-content .entry-title {
-    padding: 0px; }
+    padding: 0px;
+    font-size: 1.25rem;
+    color: #fff; }
     @media (min-width: 480px) {
       .entry-content .entry-title {
         max-width: 1024px; } }
     @media (min-width: 1024px) {
       .entry-content .entry-title {
         max-width: 1600px;
-        font-size: 1.25rem; } }
+        font-weight: 400px; } }
 
 /* 404 page */
 .page-title {
@@ -924,6 +929,14 @@ body {
       color: #00cc00; }
 
 /* Submit a Quote Page */
+.login-page {
+  padding-bottom: 50px; }
+  @media (min-width: 1024px) {
+    .login-page {
+      max-width: 650px;
+      margin: 0 auto; } }
+
+/* submit a Quote logged in page */
 .submit-wrapper {
   padding-top: 30px;
   padding-bottom: 50px; }
@@ -971,3 +984,54 @@ body {
 
 .about-content-container p {
   font-size: 1rem; }
+
+/* search results page */
+@media (min-width: 1024px) {
+  .search-site-main {
+    max-width: 650px;
+    margin: 0 auto; } }
+
+@media (min-width: 1024px) {
+  .search-site-main {
+    max-width: 650px; }
+    .search-site-main q {
+      quotes: "“" "”"; }
+    .search-site-main .search-page-title:before {
+      content: open-quote;
+      font-size: 25rem;
+      position: relative;
+      color: #00cc00;
+      left: -180px;
+      top: -130px;
+      height: 0;
+      width: 0px; }
+    .search-site-main .search-page-title:after {
+      content: close-quote;
+      font-size: 25rem;
+      position: relative;
+      color: #00cc00;
+      right: -420px;
+      top: -138px;
+      height: 0;
+      width: 0px; } }
+
+.search-site-main .search-page-title {
+  margin: 0 auto;
+  max-width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed; }
+  @media (min-width: 480px) {
+    .search-site-main .search-page-title {
+      max-width: 1024px; } }
+  @media (min-width: 1024px) {
+    .search-site-main .search-page-title {
+      max-width: 650px;
+      font-weight: bold; } }
+
+.search-site-main .search-entry-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 24px; }

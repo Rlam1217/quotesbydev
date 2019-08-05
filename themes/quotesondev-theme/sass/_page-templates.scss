@@ -34,7 +34,7 @@ body {
       }
       @include desktop {
           max-width: $max-width-desktop;
-          background-color: peru;
+          background-color: black;
       }
 }
 
@@ -45,15 +45,15 @@ body {
 .site-header{
     
     padding: 48px 0px 48px 0px;
-    background-color: green;
+    
     max-width: $max-width-mobile;
     @include tablet {
         max-width: $max-width-tablet;
-        background-color: blue;
+        
     }
     @include desktop {
         max-width: $max-width-desktop;
-        background-color: peru;
+        
     }
 
 
@@ -72,10 +72,10 @@ body {
     }
     @include desktop {
         max-width: $max-width-desktop;
-        background-color: peru;
+        background-color: black;
         .logo{
             max-width: 700px;
-            background-color: orchid;
+           
             margin: 0 auto;
             img{
                 width: 700px;
@@ -89,7 +89,7 @@ body {
 
 /* footer */
 .site-footer {
-    background-color: green;
+    background-color: black;
     padding-bottom: 200px;
     .main-navigation {
         background-color: black;
@@ -98,18 +98,21 @@ body {
             border-right: solid;
         }
         li:nth-child(2) {
-            background-color: red;
             padding-left: 16px;
             padding-right: 16px;
             border-right: solid;
           }
           li:nth-child(3) {
-            background-color: red;
+            
+            padding-left: 16px;
+            padding-right: 16px;
+            border-right: solid;
+          }
+          li:nth-child(4) {
             padding-left: 16px;
           }
           @include desktop {
             max-width: $max-width-desktop;
-            background-color: green;
             padding-left: 600px;
             
         }    
@@ -149,14 +152,14 @@ body {
     }
     @include desktop {
         max-width: $max-width-desktop;
-        background-color: peru;
+        background-color: black;
         q {
             quotes: "“" "”";
            
           }
           .quote-wrapper:before {
               content: open-quote;
-              font-size: 25rem;
+              font-size: 27rem;
               position: relative;
               color: $color-brand;
               left: -140px;
@@ -167,7 +170,7 @@ body {
           }
           .quote-wrapper:after {
               content: close-quote;
-              font-size: 25rem;
+              font-size: 27rem;
               position: relative;
               color: $color-brand;
               right: -55px;
@@ -179,7 +182,7 @@ body {
             max-width: 650px;
             display: flex;
             margin: 0 auto;
-            background-color: green;
+            background-color: black;
             font-size: 2.5rem;
         }
         h2 {
@@ -268,7 +271,9 @@ q {
         li {
             display: inline-block;
             padding-right: 18px;
-            font-size: 1.25rem;
+            @include tablet {
+               font-size: 1.25rem;
+            }
         }
     }
     @include tablet {
@@ -282,16 +287,19 @@ q {
 
 
 /* category page */
-
+.page-title {
+    padding-bottom: 24px;
+}
 .entry-content {
     background-color: black;
     max-width: $max-width-mobile;
-    border-top: 1px dashed;
+    border-top: 1px dashed #fff;
     padding-top: 24px;
     margin: 0 auto;
-    color: $color-brand;
+    font-size: 1.25rem;
     @include tablet {
         max-width: $max-width-tablet;
+        font-size: 1.75rem;
     }
     @include desktop {
         max-width: 650px;
@@ -299,12 +307,15 @@ q {
     }
     .entry-title {
         padding: 0px;
+        font-size: 1.25rem;
+        color: #fff;
         @include tablet {
             max-width: $max-width-tablet;
         }
         @include desktop {
             max-width: $max-width-desktop;
-            font-size: 1.25rem;
+            font-weight: 400px;
+            
         }
         
 }
@@ -355,6 +366,20 @@ q {
 
 /* Submit a Quote Page */
 
+.login-page {
+    padding-bottom: 50px;
+    @include desktop {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+/* submit a Quote logged in page */
 .submit-wrapper {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -416,4 +441,73 @@ q {
     @include desktop {
    
     }
+}
+
+
+/* search results page */
+
+
+.search-site-main {
+    @include desktop {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+
+
+    @include desktop {
+        max-width: 650px;
+    q {
+        quotes: "“" "”";
+       
+      }
+      .search-page-title:before {
+          content: open-quote;
+          font-size: 25rem;
+          position: relative;
+          color: $color-brand;
+          left: -180px;
+          top: -130px;
+          height: 0;
+          width: 0px;
+          
+      }
+      .search-page-title:after {
+          content: close-quote;
+          font-size: 25rem;
+          position: relative;
+          color: $color-brand;
+          right: -420px;
+          top: -138px;
+          height: 0;
+          width: 0px;
+      }
+    }
+    
+    .search-page-title{
+        margin: 0 auto;
+        max-width: 480px;
+        display: flex;
+        padding-bottom: 24px;
+        border-bottom: 1px dashed;
+        @include tablet {
+            max-width: $max-width-tablet;
+            
+        }
+
+        @include desktop {
+            max-width: 650px;
+            font-weight: bold;
+           
+        }
+    }
+    
+
+
+.search-entry-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 24px;
+}
+
 }

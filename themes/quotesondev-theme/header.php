@@ -23,7 +23,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<div class="logo">
-				<?php echo '<img src="' . wp_get_attachment_url( 214 ) . '" alt="Quotes on Dev logo" />'; ?> 
+					<a href="<?php echo get_home_url()?>"> <?php echo '<img src="' . wp_get_attachment_url( 214 ) . '" alt="Quotes on Dev logo" />'; ?></a> 
 					</div>
 					
 				</div><!-- .site-branding -->
