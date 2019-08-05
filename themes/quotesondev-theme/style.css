@@ -742,6 +742,10 @@ body {
   max-width: 480px;
   background-color: black;
   margin: 0 auto; }
+  .content-area .author {
+    display: inline-block; }
+  .content-area .qod-source {
+    display: inline-block; }
   .content-area .button-wrapper {
     padding-bottom: 72px; }
     .content-area .button-wrapper button {

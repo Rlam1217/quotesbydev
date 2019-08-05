@@ -133,6 +133,14 @@ body {
     max-width: $max-width-mobile;
     background-color: black;
     margin: 0 auto;
+    .author {
+        display: inline-block;
+        
+    }
+    .qod-source {
+        display: inline-block;
+        
+    }
     .button-wrapper{
         padding-bottom: 72px;
         button {

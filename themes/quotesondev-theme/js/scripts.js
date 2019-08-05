@@ -16,6 +16,7 @@
          console.log(response[0].content.rendered);
          console.log(response[0].title.rendered);
          console.log(response[0]);
+         console.log(response[0]._qod_quote_source);
          console.log(response[0]._qod_quote_source_url);
          
         
@@ -25,8 +26,28 @@
         
         $('.quote-wrapper').empty();
         $('.author').empty();
+        $('.qod-source').empty();
         $('.quote-wrapper').append(response[0].content.rendered);
-        $('.author').append(response[0].title.rendered);
+        
+       
+        let p = '<p>' + response[0]._qod_quote_source + '</p>';
+        let urlLink = '<a href="' + response[0]._qod_quote_source_url + '">';
+        let url = response[0]._qod_quote_source_url;
+
+
+        if (response[0]._qod_quote_source.length > 1) {
+          $('.author').append('- ' + response[0].title.rendered + ' . ');
+        } else { 
+          $('.author').append('- ' + response[0].title.rendered);
+        }
+
+        if (url.length > 1) {
+          $('.qod-source').append(urlLink + p + '</a>');
+        } else { 
+          $('.qod-source').append(p);
+        }
+
+        
        
 
       });

@@ -16,6 +16,7 @@
 		<q><div class="quote-wrapper"><?php the_content(); ?>
 		</div></q>
 		<h2 class="author">- <?php the_title(); ?> </h2>
+		<div class="qod-source"></div>
 		
 		
 		<?php
