@@ -742,10 +742,25 @@ body {
   max-width: 480px;
   background-color: black;
   margin: 0 auto; }
+  .content-area .quote-wrapper {
+    font-size: 1.25rem; }
+    @media (min-width: 480px) {
+      .content-area .quote-wrapper {
+        max-width: 1024px;
+        font-size: 1.75rem; } }
   .content-area .author {
-    display: inline-block; }
+    display: inline-block;
+    font-size: 1.25rem; }
+    @media (min-width: 1024px) {
+      .content-area .author {
+        padding-left: 430px;
+        margin: 0 auto;
+        font-weight: 400; } }
   .content-area .qod-source {
-    display: inline-block; }
+    display: inline-block;
+    font-style: italic;
+    font-family: 'Exo Web';
+    font-size: 1.25rem; }
   .content-area .button-wrapper {
     padding-bottom: 72px; }
     .content-area .button-wrapper button {
@@ -754,7 +769,13 @@ body {
       background-color: black;
       border-width: 2px;
       border-color: #00cc00;
-      font-family: 'Exo Web'; }
+      font-family: 'Exo Web';
+      font-weight: bold;
+      font-size: 1rem; }
+      @media (min-width: 480px) {
+        .content-area .button-wrapper button {
+          max-width: 1024px;
+          font-size: 1.25rem; } }
   @media (min-width: 480px) {
     .content-area {
       max-width: 1024px;
@@ -791,16 +812,12 @@ body {
         margin: 0 auto;
         background-color: black;
         font-size: 2.5rem; }
-      .content-area h2 {
-        margin: 0 auto;
-        max-width: 650px; }
       .content-area .button-wrapper {
         max-width: 240px;
         margin: 0 auto; }
         .content-area .button-wrapper button {
           margin: 0 auto;
-          font-weight: 800px;
-          font-size: 1.1rem;
+          font-size: 1.25rem;
           max-width: 240px; } }
 
 /* All Archives Page */
@@ -848,6 +865,7 @@ body {
     margin-bottom: 0px; }
   .content-container h2 {
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 19.92px 0px 19.92px 0px; }
   .content-container .categories {
     list-style: none; }
@@ -874,7 +892,7 @@ body {
 .entry-content {
   background-color: black;
   max-width: 480px;
-  border-top: 1px dashed #fff;
+  border-top: 1px dotted #fff;
   padding-top: 24px;
   margin: 0 auto;
   font-size: 1.25rem; }
@@ -896,7 +914,7 @@ body {
     @media (min-width: 1024px) {
       .entry-content .entry-title {
         max-width: 1600px;
-        font-weight: 400px; } }
+        font-weight: 400; } }
 
 /* 404 page */
 .page-title {
@@ -951,7 +969,7 @@ body {
     margin: 10px 0 10px 0; }
   .submit-wrapper #submit-quote {
     height: 60px;
-    width: 98%;
+    width: 97%;
     border-color: #00cc00;
     background-color: black;
     border-width: 2px;
@@ -982,12 +1000,14 @@ body {
   @media (min-width: 1024px) {
     .about-title {
       max-width: 1600px;
-      background-color: peru;
       max-width: 650px;
       margin: 0 auto; } }
 
 .about-content-container p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin-top: 24px; }
+  .about-content-container p img {
+    width: 16px; }
 
 /* search results page */
 @media (min-width: 1024px) {
