@@ -9,21 +9,10 @@
           security: red_vars.comment_nonce,
         }
       }).done(function(response) {
-        // let pickedPost = (Math.floor(Math.random() * response.length)) ///some number;
-        // console.log(response[pickedPost].title);
-        // console.log(response[pickedPost].excerpt);
-        // console.log(response.length);
-         console.log(response[0].content.rendered);
-         console.log(response[0].title.rendered);
-         console.log(response[0]);
-         console.log(response[0]._qod_quote_source);
-         console.log(response[0]._qod_quote_source_url);
+        
+        let $qodsource = response[0]._qod_quote_source;
          
-        
-       
-
-// 
-        
+         
         $('.quote-wrapper').empty();
         $('.author').empty();
         $('.qod-source').empty();
@@ -35,7 +24,7 @@
         let url = response[0]._qod_quote_source_url;
 
 
-        if (response[0]._qod_quote_source.length > 1) {
+        if ($qodsource.length > 1) {
           $('.author').append('- ' + response[0].title.rendered + ' . ');
         } else { 
           $('.author').append('- ' + response[0].title.rendered);
@@ -47,7 +36,7 @@
           $('.qod-source').append(p);
         }
 
-        
+        history.pushState(response, null, "/project5/quotesondev/" + response[0].slug);
        
 
       });

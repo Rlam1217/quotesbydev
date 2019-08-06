@@ -763,6 +763,8 @@ body {
     font-size: 1.25rem; }
   .content-area .button-wrapper {
     padding-bottom: 72px; }
+    .content-area .button-wrapper :focus {
+      outline: none; }
     .content-area .button-wrapper button {
       padding: 12px 36px;
       color: #00cc00;
@@ -927,6 +929,8 @@ body {
 
 .page404-content .search-form-wrapper {
   padding-bottom: 80px; }
+  .page404-content .search-form-wrapper :focus {
+    outline: none; }
   @media (min-width: 1024px) {
     .page404-content .search-form-wrapper {
       max-width: 650px;
@@ -958,6 +962,8 @@ body {
 .submit-wrapper {
   padding-top: 30px;
   padding-bottom: 50px; }
+  .submit-wrapper :focus {
+    outline: none; }
   .submit-wrapper input[type="text"] {
     border-color: #00cc00;
     border-width: 2px;

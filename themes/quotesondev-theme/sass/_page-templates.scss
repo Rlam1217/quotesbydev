@@ -35,6 +35,7 @@ body {
           max-width: $max-width-desktop;
          
       }
+
 }
 
 
@@ -120,13 +121,7 @@ body {
             padding-left: 45vw;
             
         }    
-
-
     }
-   
-    
-    
-
 }
 
 
@@ -161,6 +156,10 @@ body {
     }
     .button-wrapper{
         padding-bottom: 72px;
+        :focus{
+            outline: none;
+        }
+        
         button {
             padding: 12px 36px;
             color: $color-brand;
@@ -362,6 +361,9 @@ q {
     margin: 0 auto;
 }
     .search-form-wrapper {
+        :focus{
+            outline: none;
+        }
         padding-bottom: 80px;
         @include desktop {
             max-width: 650px;
@@ -408,7 +410,9 @@ q {
 .submit-wrapper {
     padding-top: 30px;
     padding-bottom: 50px;
-    
+    :focus{
+        outline: none;
+    }
     input[type="text"] { 
         border-color: $color-brand;
         border-width: 2px;
