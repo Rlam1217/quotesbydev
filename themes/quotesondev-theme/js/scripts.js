@@ -91,7 +91,7 @@
     });
 
     
-
+    $('#menu-item-260').prepend('Brought to you by ');
 
 
 
