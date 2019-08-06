@@ -1,23 +1,35 @@
-# Quotes on Dev Starter
+# Quotes on Dev Site
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+The Quotes on Dev Site is a website built on Wordpress which which displays random quotes from Web Developers. It's main functionality is to use an AJAX API to get and post Quotes from Devs onto the website. Logged in users can add quotes using WP API.
 
-## Installation
+## Technologies Used
 
-### 1. Download me (don't clone me!)
+1. Wordpress 
+2. Underscores starter theme
+3. Gulp and it's dependencies
 
-Then add me to your `wp-content/themes` directory.
+## WordPress/PHP
 
-### 2. Rename the `quotesondev-starter-master` directory
+* Built with WordPress as CMS
+* Quotes submitted to the Quotes On Dev site can be managed under posts in the Word Press Dashboard
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+## HTML
 
-### 3. Install the dev dependencies
+HTML5 doctype
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+## SASS/CSS
 
-### 4. Update the proxy in `gulpfile.js`
+* Sass as a preprocessor
+* Responsive Web Design
+* Incorporate custom fonts using @font-face
+* Uses Font Awesome for search icon font
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+## JS/jQuery
 
-And now would be a good time to `git init` :)
+* AJAX 
+* History API
+
+## Personal Learnings
+
+* Handling Wordpress REST API and AJAX
+* Using Javascript/jQuery, PHP, Wordpress and SCSS
