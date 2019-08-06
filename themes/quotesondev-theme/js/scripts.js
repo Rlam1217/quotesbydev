@@ -79,17 +79,17 @@
         }
       }).success(function() {
         alert("Quote sucessfully submitted to database");
+        $('#quote-submit-form')[0].reset();
         
   
       }).fail(function () {
-  
         alert("Quote submission unsuccessful");
-        
+        $('#quote-submit-form')[0].reset();
   
 
       });
     });
-
+    
     
     $('#menu-item-260').prepend('Brought to you by ');
 
