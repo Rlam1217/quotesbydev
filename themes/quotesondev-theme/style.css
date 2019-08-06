@@ -791,7 +791,7 @@ body {
         font-size: 35rem;
         position: relative;
         color: #00cc00;
-        left: -185px;
+        left: -245px;
         top: -170px;
         height: 0;
         width: 0px; }
@@ -838,7 +838,7 @@ body {
     font-size: 25rem;
     position: relative;
     color: #00cc00;
-    right: -520px;
+    right: -500px;
     top: -130px;
     height: 0;
     width: 0px; } }
@@ -913,6 +913,13 @@ body {
       .entry-content .entry-title {
         max-width: 1600px;
         font-weight: 400; } }
+
+@media (min-width: 1024px) {
+  .page-links {
+    max-width: 650px;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 12px; } }
 
 /* 404 page */
 .page-title {

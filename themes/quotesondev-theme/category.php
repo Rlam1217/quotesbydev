@@ -28,10 +28,12 @@ get_header(); ?>
 
 	<?php endwhile; ?>
 
+		<div class="page-links">
 		<?php echo paginate_links( array(
 			'format' => '?paged=%#%',
 			'current' => max( 1, get_query_var('paged') ),
 		) ); ?>
+		</div>
 
 		<?php else : ?>
 

@@ -191,7 +191,7 @@ body {
               font-size: 35rem;
               position: relative;
               color: $color-brand;
-              left: -185px;
+              left: -245px;
               top: -170px;
               height: 0;
               width: 0px;
@@ -254,7 +254,7 @@ q {
       font-size: 25rem;
       position: relative;
       color: $color-brand;
-      right: -520px;
+      right: -500px;
       top: -130px;
       height: 0;
       width: 0px;
@@ -314,6 +314,7 @@ q {
 /* category page */
 .page-title {
     padding-bottom: 24px;
+   
 }
 .entry-content {
     max-width: $max-width-mobile;
@@ -339,11 +340,18 @@ q {
         @include desktop {
             max-width: $max-width-desktop;
             font-weight: 400;
-            
         }
         
 }
 }
+    .page-links {
+        @include desktop {
+            max-width: 650px;
+            margin: 0 auto;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
 
 
 
