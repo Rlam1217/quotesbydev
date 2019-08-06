@@ -663,8 +663,8 @@ body {
   font-family: 'Exo Web';
   font-size: 16px;
   color: #fff;
+  background-color: #222222;
   padding: 12px;
-  background-color: yellow;
   max-width: 480px;
   margin: 0 auto; }
   body a:link {
@@ -677,12 +677,10 @@ body {
     color: #00cc00; }
   @media (min-width: 480px) {
     body {
-      max-width: 1024px;
-      background-color: red; } }
+      max-width: 1024px; } }
   @media (min-width: 1024px) {
     body {
-      max-width: 1600px;
-      background-color: green; } }
+      max-width: 1600px; } }
 
 /* header */
 .site-header {
@@ -701,12 +699,10 @@ body {
       width: 300px; }
     @media (min-width: 480px) {
       .site-header .site-branding {
-        max-width: 1024px;
-        background-color: red; } }
+        max-width: 1024px; } }
     @media (min-width: 1024px) {
       .site-header .site-branding {
-        max-width: 1600px;
-        background-color: black; }
+        max-width: 1600px; }
         .site-header .site-branding .logo {
           max-width: 700px;
           margin: 0 auto; }
@@ -715,41 +711,36 @@ body {
 
 /* footer */
 .site-footer {
-  background-color: black;
   padding-bottom: 200px; }
-  .site-footer .main-navigation {
-    background-color: black; }
-    .site-footer .main-navigation li:nth-child(1) {
-      padding-right: 16px;
-      border-right: 1px solid #fff; }
-    .site-footer .main-navigation li:nth-child(2) {
-      padding-left: 16px;
-      padding-right: 16px;
-      border-right: 1px solid #fff; }
-    .site-footer .main-navigation li:nth-child(3) {
-      padding-left: 16px;
-      padding-right: 16px;
-      border-right: 1px solid #fff; }
-    .site-footer .main-navigation li:nth-child(4) {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .site-footer .main-navigation li:nth-child(4) a {
-        padding-left: 5px; }
-      @media (min-width: 480px) {
-        .site-footer .main-navigation li:nth-child(4) {
-          max-width: 1024px;
-          padding-left: 16px; } }
-    @media (min-width: 1024px) {
-      .site-footer .main-navigation {
-        max-width: 1600px;
-        padding-left: 45vw;
-        background-color: black; } }
+  .site-footer .main-navigation li:nth-child(1) {
+    padding-right: 16px;
+    border-right: 1px solid #fff; }
+  .site-footer .main-navigation li:nth-child(2) {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-right: 1px solid #fff; }
+  .site-footer .main-navigation li:nth-child(3) {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-right: 1px solid #fff; }
+  .site-footer .main-navigation li:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-footer .main-navigation li:nth-child(4) a {
+      padding-left: 5px; }
+    @media (min-width: 480px) {
+      .site-footer .main-navigation li:nth-child(4) {
+        max-width: 1024px;
+        padding-left: 16px; } }
+  @media (min-width: 1024px) {
+    .site-footer .main-navigation {
+      max-width: 1600px;
+      padding-left: 45vw; } }
 
 /* home page */
 .content-area {
   max-width: 480px;
-  background-color: black;
   margin: 0 auto; }
   .content-area .quote-wrapper {
     font-size: 1.25rem; }
@@ -775,9 +766,9 @@ body {
     .content-area .button-wrapper button {
       padding: 12px 36px;
       color: #00cc00;
-      background-color: black;
       border-width: 2px;
       border-color: #00cc00;
+      background-color: #222222;
       font-family: 'Exo Web';
       font-weight: bold;
       font-size: 1rem; }
@@ -787,30 +778,28 @@ body {
           font-size: 1.25rem; } }
   @media (min-width: 480px) {
     .content-area {
-      max-width: 1024px;
-      background-color: red; } }
+      max-width: 1024px; } }
   @media (min-width: 1024px) {
     .content-area {
-      max-width: 1600px;
-      background-color: black; }
+      max-width: 1600px; }
       .content-area q {
         quotes: "“" "”"; }
       .content-area .quote-wrapper:before {
         content: open-quote;
-        font-size: 27rem;
+        font-size: 35rem;
         position: relative;
         color: #00cc00;
-        left: -140px;
-        top: -130px;
+        left: -185px;
+        top: -170px;
         height: 0;
         width: 0px; }
       .content-area .quote-wrapper:after {
         content: close-quote;
-        font-size: 27rem;
+        font-size: 35rem;
         position: relative;
         color: #00cc00;
-        right: -55px;
-        top: -130px;
+        right: -35px;
+        top: -170px;
         height: 0;
         width: 0px; }
       .content-area .quote-wrapper {
@@ -819,7 +808,6 @@ body {
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
-        background-color: black;
         font-size: 2.5rem; }
       .content-area .button-wrapper {
         max-width: 240px;
@@ -868,8 +856,8 @@ body {
       font-weight: bold; } }
 
 .content-container {
-  background-color: black;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 72px; }
   .content-container h1 {
     margin-bottom: 0px; }
   .content-container h2 {
@@ -899,7 +887,6 @@ body {
   padding-bottom: 24px; }
 
 .entry-content {
-  background-color: black;
   max-width: 480px;
   border-top: 1px dotted #fff;
   padding-top: 24px;
@@ -951,11 +938,11 @@ body {
     padding: 0;
     display: inline; }
     .page404-content .search-form-wrapper fieldset .search-field {
-      background-color: black;
-      border-color: black; }
+      background-color: #222222;
+      border-color: #222222; }
   .page404-content .search-form-wrapper .search-submit {
-    background-color: black;
-    border-color: black; }
+    background-color: #222222;
+    border-color: #222222; }
     .page404-content .search-form-wrapper .search-submit .fas {
       color: #00cc00; }
 
@@ -974,18 +961,20 @@ body {
   .submit-wrapper input[type="text"] {
     border-color: #00cc00;
     border-width: 2px;
-    background-color: black;
-    margin: 10px 0 10px 0; }
+    background-color: #222222;
+    margin: 10px 0 10px 0;
+    color: white; }
   .submit-wrapper #submit-quote {
     height: 60px;
     width: 97%;
     border-color: #00cc00;
-    background-color: black;
+    background-color: #222222;
     border-width: 2px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    color: white; }
   .submit-wrapper #submit-button {
     margin-top: 10px;
-    background-color: black;
+    background-color: #222222;
     border-color: #00cc00;
     border-width: 2px;
     color: #00cc00;

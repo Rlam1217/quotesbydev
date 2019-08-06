@@ -8,6 +8,7 @@ body {
     font-family: 'Exo Web';
     font-size: 16px;
     color: #fff;
+    background-color: $color-background;
     a:link {
         text-decoration: none;
       }
@@ -25,16 +26,14 @@ body {
         color: $color-brand;
       }
       padding: 12px;
-      background-color: yellow;
       max-width: $max-width-mobile;
       margin: 0 auto;
       @include tablet {
           max-width: $max-width-tablet;
-          background-color: red;
       }
       @include desktop {
           max-width: $max-width-desktop;
-          background-color: green;
+         
       }
 }
 
@@ -68,11 +67,9 @@ body {
     }
     @include tablet {
         max-width: $max-width-tablet;
-        background-color: red;
     }
     @include desktop {
         max-width: $max-width-desktop;
-        background-color: black;
         .logo{
             max-width: 700px;
            
@@ -89,10 +86,10 @@ body {
 
 /* footer */
 .site-footer {
-    background-color: black;
+    
     padding-bottom: 200px;
     .main-navigation {
-        background-color: black;
+        
         li:nth-child(1) {
             padding-right: 16px;
             border-right: 1px solid #fff;
@@ -116,13 +113,12 @@ body {
             @include tablet {
                 max-width: $max-width-tablet;
                 padding-left: 16px;
-                
             }
           }
           @include desktop {
             max-width: $max-width-desktop;
             padding-left: 45vw;
-            background-color: black;
+            
         }    
 
 
@@ -139,7 +135,6 @@ body {
 /* home page */
 .content-area {
     max-width: $max-width-mobile;
-    background-color: black;
     margin: 0 auto;
     .quote-wrapper {
         font-size: 1.25rem;
@@ -155,7 +150,6 @@ body {
             padding-left: 430px;
             margin: 0 auto;
             font-weight: 400;
-            
         }
         
     }
@@ -164,17 +158,15 @@ body {
         font-style: italic;
         font-family: 'Exo Web';
         font-size: 1.25rem;
-        
-        
     }
     .button-wrapper{
         padding-bottom: 72px;
         button {
             padding: 12px 36px;
             color: $color-brand;
-            background-color: black;
             border-width: 2px;
             border-color: $color-brand;
+            background-color: $color-background;
             font-family: 'Exo Web';
             font-weight: bold;
             font-size: 1rem;
@@ -187,33 +179,32 @@ body {
     }
     @include tablet {
         max-width: $max-width-tablet;
-        background-color: red;
+        
     }
     @include desktop {
         max-width: $max-width-desktop;
-        background-color: black;
         q {
             quotes: "“" "”";
            
           }
           .quote-wrapper:before {
               content: open-quote;
-              font-size: 27rem;
+              font-size: 35rem;
               position: relative;
               color: $color-brand;
-              left: -140px;
-              top: -130px;
+              left: -185px;
+              top: -170px;
               height: 0;
               width: 0px;
               
           }
           .quote-wrapper:after {
               content: close-quote;
-              font-size: 27rem;
+              font-size: 35rem;
               position: relative;
               color: $color-brand;
-              right: -55px;
-              top: -130px;
+              right: -35px;
+              top: -170px;
               height: 0;
               width: 0px;
           }
@@ -221,7 +212,6 @@ body {
             max-width: 650px;
             display: flex;
             margin: 0 auto;
-            background-color: black;
             font-size: 2.5rem;
         }
         
@@ -286,8 +276,8 @@ q {
     }
 }
 .content-container {
-    background-color: black;
     margin: 0 auto;
+    padding-bottom: 72px;
    
     h1 {
         margin-bottom: 0px;
@@ -327,7 +317,6 @@ q {
     padding-bottom: 24px;
 }
 .entry-content {
-    background-color: black;
     max-width: $max-width-mobile;
     border-top: 1px dotted #fff;
     padding-top: 24px;
@@ -385,13 +374,13 @@ q {
         padding: 0;
         display: inline;
         .search-field {
-            background-color: black;
-            border-color: black;
+            background-color: $color-background;
+            border-color: $color-background;
         } 
          }
     .search-submit {
-        background-color: black;
-        border-color: black;
+        background-color: $color-background;
+        border-color: $color-background;
         .fas { 
             color: $color-brand;
             
@@ -423,21 +412,23 @@ q {
     input[type="text"] { 
         border-color: $color-brand;
         border-width: 2px;
-        background-color: black;
+        background-color: $color-background;
         margin: 10px 0 10px 0;
+        color: white;
     }
     #submit-quote{
         height: 60px;
         width: 97%;
         border-color: $color-brand;
-        background-color: black;
+        background-color: $color-background;
         border-width: 2px;
         margin-top: 10px;
+        color: white;
         
     }
     #submit-button {
         margin-top: 10px;
-        background-color: black;
+        background-color: $color-background;
         border-color: $color-brand;
         border-width: 2px;
         color: $color-brand;
@@ -463,7 +454,6 @@ q {
     max-width: $max-width-mobile;
     font-size: 2rem;
     font-weight: bold;
-
     @include desktop {
     max-width: $max-width-desktop;
     
@@ -490,9 +480,6 @@ q {
         max-width: 650px;
         margin: 0 auto;
     }
-
-
-
     @include desktop {
         max-width: 650px;
     q {
