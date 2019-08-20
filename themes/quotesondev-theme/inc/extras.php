@@ -61,5 +61,11 @@ function category_posts( $query ) {
 }
 
 
+add_action('pre_get_posts','alter_query');
+function alter_query($query){
+    if ($query->is_main_query() &&  is_home())
+        $query->set('orderby', 'rand'); //Set the order to random
+}
+
 
 
