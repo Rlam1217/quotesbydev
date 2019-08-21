@@ -12,13 +12,8 @@
     <?php the_title( '<h1 class="about-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="about-content-container">
-   
-		<q><div class="quote-wrapper"><?php the_content(); ?>
-		</div></q>
-		
-		
-		
-		
-	</div><!-- .entry-content -->
+<div class="about-content-container">
+	<div class="quote-wrapper"><?php the_content(); ?>
+	</div>
+</div>
 </article><!-- #post-## -->

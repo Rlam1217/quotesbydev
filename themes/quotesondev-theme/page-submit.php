@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<q><?php the_title( '<h1 class="page-title">', '</h1>' ); ?></q>
+		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 
 		
@@ -37,9 +37,9 @@ get_header(); ?>
                  <p>Sorry, you must be logged in to submit a quote!</p>
                  <a href="http://localhost/project5/quotesondev/wp-login.php?">Click here to login.</a> 
             </div>
-    
     <?php } ?>
         </div>
 		</main><!-- #main -->
-	</div><!-- #primary -->
+    </div><!-- #primary -->
+    
 <?php get_footer(); ?>
