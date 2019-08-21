@@ -21,12 +21,12 @@ get_header(); ?>
 					Author of Quote <br>
 					<input type="text" id ="author-name" name="author"><br>
 					Quote <br> 
-					<textarea rows="10" id= "submit-quote" name="quote"></textarea><br>
+					<textarea rows="10" class="submit-quote" id= "submit-quote" name="quote"></textarea><br>
 					Where did you find this quote? (e.g. book name) <br>
 					<input type="text" id="find-quote" name="findquote" value=""><br>
 					Provide the URL of the quote source, if available.<br>
 					<input type="text" id="quote-source" name="quotesource" value=""><br>
-                    <input type="submit" id= "submit-button" value="Submit Quote">
+                    <input type="submit" class="submit-button" id= "submit-button" value="Submit Quote">
                 </form>
             </div>
 

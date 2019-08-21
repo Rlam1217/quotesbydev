@@ -335,7 +335,7 @@ body {
     font-size: 7rem;
     position: relative;
     color: $color-brand;
-    right: -340px;
+    right: -400px;
     top: -25px;
     height: 0;
     width: 0px;
@@ -464,7 +464,7 @@ body {
         margin: 10px 0 10px 0;
         color: white;
     }
-    #submit-quote{
+    .submit-quote{
         height: 60px;
         width: 97%;
         border-color: $color-brand;
@@ -474,7 +474,7 @@ body {
         color: white;
         
     }
-    #submit-button {
+    .submit-button {
         margin-top: 10px;
         background-color: $color-background;
         border-color: $color-brand;

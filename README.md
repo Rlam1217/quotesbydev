@@ -2,6 +2,10 @@
 
 The Quotes on Dev Site is a website built on Wordpress which which displays random quotes from Web Developers. It's main functionality is to use an AJAX API to get and post Quotes from Devs onto the website. Logged in users can add quotes using WP API.
 
+![](themes/quotesondev-theme/images/screenshot1dev.jpg)
+![](themes/quotesondev-theme/images/screenshot2dev.jpg)
+![](themes/quotesondev-theme/images/screenshot3dev.jpg)
+
 ## Technologies Used
 
 1. Wordpress 
@@ -22,7 +26,7 @@ HTML5 doctype
 * Sass as a preprocessor
 * Responsive Web Design
 * Incorporate custom fonts using @font-face
-* Uses Font Awesome for search icon font
+* Uses Font Awesome for Quotes and Search Icon Font
 
 ## JS/jQuery
 
