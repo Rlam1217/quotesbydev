@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: Quotes on Dev Starter Theme
 Theme URI: http://underscores.me/
@@ -784,24 +783,26 @@ body {
   @media (min-width: 1024px) {
     .content-area {
       max-width: 1600px; }
-      .content-area q {
-        quotes: "“" "”"; }
       .content-area .quote-wrapper:before {
-        content: open-quote;
-        font-size: 35rem;
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 7rem;
         position: relative;
         color: #00cc00;
-        left: -245px;
-        top: -170px;
+        left: -180px;
+        top: -25px;
         height: 0;
         width: 0px; }
       .content-area .quote-wrapper:after {
-        content: close-quote;
-        font-size: 35rem;
+        content: "\f10e";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 7rem;
         position: relative;
         color: #00cc00;
-        right: -35px;
-        top: -170px;
+        right: -55px;
+        top: -25px;
         height: 0;
         width: 0px; }
       .content-area .quote-wrapper {
@@ -823,23 +824,28 @@ body {
 @media (min-width: 1024px) {
   max-width: 650px;
   q {
-    quotes: "“" "”"; }
+    content: "\f10d";
+    content: "\f10e"; }
   .page-title:before {
-    content: open-quote;
-    font-size: 25rem;
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 7rem;
     position: relative;
     color: #00cc00;
     left: -180px;
-    top: -130px;
+    top: -25px;
     height: 0;
     width: 0px; }
   .page-title:after {
-    content: close-quote;
-    font-size: 25rem;
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 7rem;
     position: relative;
     color: #00cc00;
-    right: -500px;
-    top: -130px;
+    right: -550px;
+    top: -25px;
     height: 0;
     width: 0px; } }
 
@@ -885,8 +891,48 @@ body {
       max-width: 650px; } }
 
 /* category page */
-.page-title {
-  padding-bottom: 24px; }
+@media (min-width: 1024px) {
+  max-width: 650px;
+  q {
+    content: "\f10d";
+    content: "\f10e"; }
+  .category-page-title:before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 7rem;
+    position: relative;
+    color: #00cc00;
+    left: -180px;
+    top: -25px;
+    height: 0;
+    width: 0px; }
+  .category-page-title:after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 7rem;
+    position: relative;
+    color: #00cc00;
+    right: -450px;
+    top: -25px;
+    height: 0;
+    width: 0px; } }
+
+.category-page-title {
+  padding-bottom: 24px;
+  margin: 0 auto;
+  max-width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 480px) {
+    .category-page-title {
+      max-width: 1024px; } }
+  @media (min-width: 1024px) {
+    .category-page-title {
+      max-width: 650px;
+      font-weight: bold; } }
 
 .entry-content {
   max-width: 480px;
@@ -1029,11 +1075,11 @@ body {
 @media (min-width: 1024px) {
   .search-site-main {
     max-width: 650px; }
-    .search-site-main q {
-      quotes: "“" "”"; }
     .search-site-main .search-page-title:before {
-      content: open-quote;
-      font-size: 25rem;
+      content: "\f10d";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 7rem;
       position: relative;
       color: #00cc00;
       left: -180px;
@@ -1041,8 +1087,10 @@ body {
       height: 0;
       width: 0px; }
     .search-site-main .search-page-title:after {
-      content: close-quote;
-      font-size: 25rem;
+      content: "\f10e";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 7rem;
       position: relative;
       color: #00cc00;
       right: -420px;

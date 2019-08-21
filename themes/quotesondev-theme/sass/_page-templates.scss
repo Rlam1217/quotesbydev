@@ -38,9 +38,6 @@ body {
 
 }
 
-
-
-
 /* header */
 .site-header{
     
@@ -56,8 +53,6 @@ body {
         
     }
 
-
-    
 .site-branding {
     max-width: $max-width-mobile;
     background-color: $color-background;
@@ -82,12 +77,10 @@ body {
     }
     
 }
-
 }
 
 /* footer */
 .site-footer {
-    
     padding-bottom: 200px;
     .main-navigation {
         
@@ -123,9 +116,6 @@ body {
         }    
     }
 }
-
-
-
 
 /* home page */
 .content-area {
@@ -182,28 +172,29 @@ body {
     }
     @include desktop {
         max-width: $max-width-desktop;
-        q {
-            quotes: "“" "”";
-           
-          }
+       
           .quote-wrapper:before {
-              content: open-quote;
-              font-size: 35rem;
+              content: "\f10d";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              font-size: 7rem;
               position: relative;
               color: $color-brand;
-              left: -245px;
-              top: -170px;
+              left: -180px;
+              top: -25px;
               height: 0;
               width: 0px;
               
           }
           .quote-wrapper:after {
-              content: close-quote;
-              font-size: 35rem;
+              content: "\f10e";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              font-size: 7rem;
               position: relative;
               color: $color-brand;
-              right: -35px;
-              top: -170px;
+              right: -55px;
+              top: -25px;
               height: 0;
               width: 0px;
           }
@@ -224,8 +215,6 @@ body {
         }
         }
     }
-
-    
 }
 
 
@@ -234,30 +223,37 @@ body {
 
 @include desktop {
     max-width: 650px;
-q {
-    quotes: "“" "”";
-   
-  }
-  .page-title:before {
-      content: open-quote;
-      font-size: 25rem;
-      position: relative;
-      color: $color-brand;
-      left: -180px;
-      top: -130px;
-      height: 0;
-      width: 0px;
-      
-  }
+    
+    q {
+        content: "\f10d";
+        content: "\f10e";
+       
+      }
+      .page-title:before {
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 7rem;
+          position: relative;
+          color: $color-brand;
+          left: -180px;
+          top: -25px;
+          height: 0;
+          width: 0px;
+          
+      }
+  
   .page-title:after {
-      content: close-quote;
-      font-size: 25rem;
-      position: relative;
-      color: $color-brand;
-      right: -500px;
-      top: -130px;
-      height: 0;
-      width: 0px;
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 7rem;
+    position: relative;
+    color: $color-brand;
+    right: -550px;
+    top: -25px;
+    height: 0;
+    width: 0px;
   }
 }
 
@@ -307,15 +303,60 @@ q {
     @include desktop {
         max-width: 650px;
     }
-    
 }
-
 
 /* category page */
-.page-title {
-    padding-bottom: 24px;
-   
+
+
+@include desktop {
+    max-width: 650px;
+    q {
+        content: "\f10d";
+        content: "\f10e";
+      }
+      .category-page-title:before {
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 7rem;
+          position: relative;
+          color: $color-brand;
+          left: -180px;
+          top: -25px;
+          height: 0;
+          width: 0px;
+          
+      }
+  
+  .category-page-title:after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 7rem;
+    position: relative;
+    color: $color-brand;
+    right: -450px;
+    top: -25px;
+    height: 0;
+    width: 0px;
+  }
 }
+
+.category-page-title{
+    padding-bottom: 24px;
+    margin: 0 auto;
+    max-width: 480px;
+    display: flex;
+    @include tablet {
+        max-width: $max-width-tablet;
+    }
+    @include desktop {
+        max-width: 650px;
+        font-weight: bold;
+       
+    }
+}
+
 .entry-content {
     max-width: $max-width-mobile;
     border-top: 1px dotted #fff;
@@ -330,6 +371,7 @@ q {
         max-width: 650px;
         font-size: 2.5rem;
     }
+
     .entry-title {
         padding: 0px;
         font-size: 1.25rem;
@@ -352,8 +394,6 @@ q {
             padding-bottom: 12px;
         }
     }
-
-
 
 /* 404 page */
 .page-title{ 
@@ -408,10 +448,6 @@ q {
         margin: 0 auto;
     }
 }
-
-
-
-
 
 
 /* submit a Quote logged in page */
@@ -494,30 +530,30 @@ q {
     }
     @include desktop {
         max-width: 650px;
-    q {
-        quotes: "“" "”";
-       
-      }
       .search-page-title:before {
-          content: open-quote;
-          font-size: 25rem;
-          position: relative;
-          color: $color-brand;
-          left: -180px;
-          top: -130px;
-          height: 0;
-          width: 0px;
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 7rem;
+        position: relative;
+        color: $color-brand;
+        left: -180px;
+        top: -130px;
+        height: 0;
+        width: 0px;
           
       }
       .search-page-title:after {
-          content: close-quote;
-          font-size: 25rem;
-          position: relative;
-          color: $color-brand;
-          right: -420px;
-          top: -138px;
-          height: 0;
-          width: 0px;
+        content: "\f10e";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 7rem;
+        position: relative;
+        color: $color-brand;
+        right: -420px;
+        top: -138px;
+        height: 0;
+        width: 0px;
       }
     }
     
@@ -539,12 +575,9 @@ q {
         }
     }
     
-
-
 .search-entry-title {
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 24px;
 }
-
 }

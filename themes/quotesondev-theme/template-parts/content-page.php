@@ -4,7 +4,6 @@
  *
  * @package QOD_Starter_Theme
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -13,8 +12,8 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content-container">
-		<q><div class="quote-wrapper"><?php the_content(); ?>
-		</div></q>
+		<div class="quote-wrapper"><?php the_content(); ?>
+		</div>
 		<h2 class="author">- <?php the_title(); ?> </h2>
 		<div class="qod-source"></div>
 		
